@@ -140,6 +140,13 @@ GO
 | `trg_IssueBook` | Уменьшает `AvailableCopies` при выдаче книги |
 | `trg_ReturnBook` | Увеличивает `AvailableCopies` при возврате книги |
 
-## Автор
+## ER-диаграмма
 
-Зюбина Полина
+Схема связей между таблицами `Readers`, `Books` и `Loans`:
+
+![ER-диаграмма базы данных LibraryDB](diagram.png)
+
+Связи в базе данных:
+
+- `Readers (1) — (N) Loans`
+- `Books (1) — (N) Loans`
